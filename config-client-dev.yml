@@ -18,7 +18,7 @@
    timeout: 5000
       
       
-mybatis: 
+ mybatis: 
   mapper-locations: classpath:*Mapper.xml
   typeAliasesPackage: com.meituan.maoyan.common.entity
 
