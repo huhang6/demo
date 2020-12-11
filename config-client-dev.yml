@@ -1,44 +1,40 @@
-  security: 
-    user: 
+
+spring:
+  application:
+    name: provider-movie
+  security:
+    user:
       name: eureka
       password: 123456
   datasource:  
     driver-class-name: com.mysql.jdbc.Driver    
-    url: jdbc:mysql://120.26.52.92:13306/csxcx?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true&useSSL=false     
+    url: jdbc:mysql://120.26.52.92:13306/csxcx?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true&useSSL=false    
     username: wnxcx                                  
     password: XCX-test)^(&16
-  redis: 
-   host: 192.168.150.128
-   port: 6379
-   lettuce: 
-    pool: 
-     max-wait: 100000
-     max-idle: 10
-     max-active: 100
-   timeout: 5000
       
       
- mybatis: 
+mybatis:
   mapper-locations: classpath:*Mapper.xml
   typeAliasesPackage: com.meituan.maoyan.common.entity
 
-eureka: 
-  instance: 
+eureka:
+  instance:
     # 心跳时间，即服务续约间隔时间（缺省为30s）
     lease-renewal-interval-in-seconds: 5 
     # 发呆时间，即服务续约到期时间（缺省为90s）
     lease-expiration-duration-in-seconds: 15
-  client: 
+  client:
     #开启健康检查,需要依赖spring-boot-starter-actuator,监测Eureka客户端和服务器是否正常
-    healthcheck: 
+    healthcheck:
       enabled: true
-    service-url: 
+    service-url:
       #注册中心地址
       defaultZone: http://eureka:123456@127.0.0.1:8761/eureka
 #全局日志  
-logging: 
-  level: 
+logging:
+  level:
     root: info
+
+
+
     
-username : huhang
-password : 123456
