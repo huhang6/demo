@@ -43,5 +43,5 @@ logging:
   level: 
     root: info
     
-username:huhang
-password:123456
+username : huhang
+password : 123456
