@@ -1,7 +1,7 @@
 
 spring:
-  application:
-    name: provider-movie
+#   application:
+#     name: provider-movie
   security:
     user:
       name: eureka
