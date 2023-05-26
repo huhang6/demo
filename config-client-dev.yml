@@ -22,7 +22,7 @@ mybatis:
 logging:
   level:
     root: info
-
+test: 11111111
 
 
     
